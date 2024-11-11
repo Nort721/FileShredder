@@ -26,7 +26,7 @@ SendWindowsNotification(
     )
 {
     // Register window class
-    const char* CLASS_NAME = "NotificationWindowClass";
+    CONST PCHAR CLASS_NAME = "NotificationWindowClass";
     WNDCLASS wc = { 0 };
     wc.lpfnWndProc = WindowProc;
     wc.hInstance = GetModuleHandleA(NULL);
